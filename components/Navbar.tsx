@@ -4,22 +4,23 @@ const Logo = require("../public/logo2_transparent.png").default;
 
 interface Props {
   reference?: MutableRefObject<HTMLInputElement>;
+  clickHighlights: MouseEventHandler<HTMLAnchorElement>;
   clickFeatures: MouseEventHandler<HTMLAnchorElement>;
-  clickAbout?: MouseEventHandler<HTMLAnchorElement>;
-  clickTimeline: MouseEventHandler<HTMLAnchorElement>;
+  clickOurTeam: MouseEventHandler<HTMLAnchorElement>;
   clickContact: MouseEventHandler<HTMLAnchorElement>;
-  clickDownload: MouseEventHandler<HTMLAnchorElement>;
 }
 const Navbar: React.FC<Props> = ({
   reference,
+  clickHighlights,
   clickFeatures,
-  clickAbout,
-  clickTimeline,
+  clickOurTeam,
   clickContact,
-  clickDownload,
 }) => {
   return (
-    <div className="navbar bg-first" ref={reference}>
+    <div
+      className="navbar text-first bg-opacity-0 backdrop-blur-[1px]"
+      ref={reference}
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -44,120 +45,74 @@ const Navbar: React.FC<Props> = ({
           >
             <li>
               <a
-                className="font-bold hover:bg-black hover:text-white"
-                onClick={clickFeatures}
+                className="font-bold hover:bg-black hover:text-white font-LexendMega"
+                onClick={clickHighlights}
               >
-                Features
+                Why us?
               </a>
             </li>
-            <li tabIndex={0}>
-              <a
-                className="font-bold justify-between hover:bg-black hover:text-white"
-                onClick={clickAbout}
-              >
-                About
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                </svg>
-              </a>
-              <ul className="p-2">
-                <li>
-                  <a
-                    className="btn bg-white text-black opacity-30 hover:text-white hover:opacity-50"
-                    onClick={clickAbout}
-                  >
-                    Our Team
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="btn bg-white text-black opacity-30 hover:text-white hover:opacity-50"
-                    onClick={clickTimeline}
-                  >
-                    Progress Timeline
-                  </a>
-                </li>
-              </ul>
-            </li>
+
             <li>
               <a
-                className="font-bold hover:bg-black hover:text-white"
-                onClick={clickContact}
+                className="font-bold hover:bg-black hover:text-white font-LexendMega"
+                onClick={clickFeatures}
               >
-                Contact Us
+                How it works?
+              </a>
+            </li>
+
+            <li>
+              <a
+                className="font-bold hover:bg-black hover:text-white font-LexendMega"
+                onClick={clickOurTeam}
+              >
+                Our Team
               </a>
             </li>
           </ul>
         </div>
         {/* <Image src={Logo} alt="App Logo" width={100} height={100} /> */}
         <Link href="#">
-          <div className="btn btn-ghost normal-case text-xl">MEEToo</div>
+          <div className="btn btn-ghost normal-case text-xl font-LexendMega">
+            MEEToo
+          </div>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 gap-1">
           <li>
             <a
-              className="btn bg-transparent hover:bg-black hover:text-white"
-              onClick={clickFeatures}
+              className="btn btn-ghost bg-transparent hover:bg-first hover:text-white font-LexendMega"
+              onClick={clickHighlights}
             >
-              Features
+              Why MEEToo
             </a>
-          </li>
-          <li tabIndex={0}>
-            <a
-              className="btn bg-transparent hover:bg-black hover:text-white"
-              onClick={clickAbout}
-            >
-              About
-              <svg
-                className="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-              </svg>
-            </a>
-            <ul className="p-2">
-              <li>
-                <a
-                  className="btn bg-white text-black opacity-30 hover:text-white hover:opacity-50"
-                  onClick={clickAbout}
-                >
-                  Our Team
-                </a>
-              </li>
-              <li>
-                <a
-                  className="btn bg-white text-black opacity-30 hover:text-white hover:opacity-50"
-                  onClick={clickTimeline}
-                >
-                  Progress Timeline
-                </a>
-              </li>
-            </ul>
           </li>
           <li>
             <a
-              className="btn bg-transparent hover:bg-black hover:text-white"
-              onClick={clickContact}
+              className="btn btn-ghost bg-transparent hover:bg-first hover:text-white font-LexendMega"
+              onClick={clickFeatures}
             >
-              Contact Us
+              How it works?
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="btn btn-ghost bg-transparent hover:bg-first hover:text-white font-LexendMega"
+              onClick={clickOurTeam}
+            >
+              Our Team
             </a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn" onClick={clickDownload}>
-          Download
+        <a
+          className="btn font-LexendMega hover:bg-white hover:text-black"
+          onClick={clickContact}
+        >
+          Contact Us
         </a>
       </div>
     </div>

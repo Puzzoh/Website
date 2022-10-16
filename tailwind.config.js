@@ -21,15 +21,31 @@ module.exports = {
             },
             fontFamily: {
                 IndustrialSans: ["IndustrialSans", "cursive"],
-            }
+                LexendMega: ['LexendMega'],
+                LexendDeca: ['LexendDeca']
+            },
+            colors: {
+                white: '#FFF',
+                black: '#000',
+                first: 'hsl(23, 100%, 65%)',
+                firstlight: 'hsl(23, 100%, 70%)',
+                primary: 'hsl(188, 86%, 55%)',
+                second: 'hsl(72, 68%, 64%)',
+                alt: 'hsl(182, 100%, 40%)',
+                main: 'hsl(0, 100%, 91%)'
+            },
         },
         colors: {
-            white: '#FFF',
-            black: '#000',
-            primary: 'hsl(72, 68%, 64%)',
-            first: 'hsl(188, 86%, 55%)',
-            second: 'hsl(23, 100%, 65%)',
-            main: 'hsl(0, 100%, 91%)'
+            transparent: 'transparent',
+            current: 'currentColor',
+            black: colors.black,
+            white: colors.white,
+            gray: colors.slate,
+            green: colors.emerald,
+            blue: colors.blue,
+            purple: colors.violet,
+            yellow: colors.amber,
+            pink: colors.fuchsia,
         },
         screens: {
             'xs': '480px',

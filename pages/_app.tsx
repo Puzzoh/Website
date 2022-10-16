@@ -5,6 +5,7 @@ import ScrollObserver from "../utils/ScrollObserver";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ScrollObserver>
+      {/* <Navbar /> */}
       <Component {...pageProps} />
     </ScrollObserver>
   );

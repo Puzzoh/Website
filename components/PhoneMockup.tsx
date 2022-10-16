@@ -13,7 +13,7 @@ const PhoneMockup: React.FC<Props> = ({ background }) => {
         <Image
           src={background}
           // layout="responsive"
-          width={300}
+          width={400}
           height={550}
           alt=""
         />
