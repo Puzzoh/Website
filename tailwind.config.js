@@ -27,12 +27,9 @@ module.exports = {
             colors: {
                 white: '#FFF',
                 black: '#000',
-                first: 'hsl(23, 100%, 65%)',
-                firstlight: 'hsl(23, 100%, 70%)',
-                primary: 'hsl(188, 86%, 55%)',
+                primary: 'hsl(23, 100%, 65%)',
+                primary_light: 'hsl(23, 100%, 70%)',
                 second: 'hsl(72, 68%, 64%)',
-                alt: 'hsl(182, 100%, 40%)',
-                main: 'hsl(0, 100%, 91%)'
             },
         },
         colors: {

@@ -6,7 +6,7 @@ const NotFound: NextPage = () => {
   const router = useRouter();
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center space-y-5">
-      <h1 className="text-6xl text-first font-bold font-LexendMega">
+      <h1 className="text-6xl text-primary font-bold font-LexendMega">
         404 - Page not found
       </h1>
       <p className="font-LexendDeca">

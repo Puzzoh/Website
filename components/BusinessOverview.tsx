@@ -6,7 +6,7 @@ interface Props {
   clickPerks: MouseEventHandler<HTMLButtonElement>;
 }
 
-const BusinessOverview: React.FC<Props> = ({ reference, clickPerks }) => {
+const BusinessOverview: React.FC<Props> = ({ reference }) => {
   return (
     <div ref={reference}>
       <div
@@ -16,18 +16,17 @@ const BusinessOverview: React.FC<Props> = ({ reference, clickPerks }) => {
         <div className="grid lg:grid-cols-2 items-center justify-items-center gap-5">
           <div className="order-2 lg:order-1 flex flex-col justify-center items-center">
             <div className="w-full text-center text-2xl font-bold md:text-4xl text-white font-LexendMega">
-              Make your service our Meet-er&apos;s new favorite to experience
+              Make our customers&apos; new favorite services
             </div>
             <div className="text-center font-light mt-2 text-sm md:text-lg text-gray-300 font-LexendDeca">
               An efficient and cost-friendly way to reach new customers and
               manage reservation
             </div>
-            <button
-              className="btn btn-md border-none bg-white hover:bg-black text-black hover:text-white rounded-3xl uppecase text-sm font-LexendDeca px-5 mt-10 mb-4 lg:mb-0"
-              onClick={clickPerks}
-            >
-              See the perks
-            </button>
+            <Link href="#">
+              <button className="btn btn-md border-none bg-white hover:bg-black text-black hover:text-white rounded-3xl uppecase text-sm font-LexendDeca px-5 mt-10 mb-4 lg:mb-0">
+                Sign in to the business portal
+              </button>
+            </Link>
           </div>
           <div className="order-1 lg:order-2 md:my-2">
             <div className="z-10 w-full h-full rounded-xl shadow-lg p-8 bg-black max-w-sm md:max-w-none mt-4 md:mt-0">
@@ -118,14 +117,6 @@ const BusinessOverview: React.FC<Props> = ({ reference, clickPerks }) => {
                     </select>
                   </div>
                 </div>
-                {/* <div className="form-control">
-                  <label className="label cursor-pointer">
-                    <input type="checkbox" checked className="checkbox" />
-                    <span className="label-text text-white font-LexendDeca">
-                      Opt in to receive SMS messages & calls about our updates
-                    </span>
-                  </label>
-                </div> */}
                 <textarea
                   id="message"
                   name="message"
@@ -149,7 +140,7 @@ const BusinessOverview: React.FC<Props> = ({ reference, clickPerks }) => {
                 <div className="inline-block self-end font-bold mt-10">
                   <button
                     type="submit"
-                    className="btn btn-md bg-black hover:bg-white hover:text-black rounded-3xl px-8 uppecase text-sm font-LexendDeca"
+                    className="btn btn-md bg-black text-white hover:bg-white hover:text-black rounded-3xl px-8 uppecase text-sm font-LexendDeca"
                   >
                     Submit
                   </button>

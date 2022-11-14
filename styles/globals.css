@@ -10,6 +10,7 @@
 
 body {
   background: white;
+  color: black;
   font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Arial, Helvetica, sans-serif;
 }
 
@@ -71,7 +72,7 @@ body {
     transition: 0.3s;
   }
   .card .img-container {
-    @apply h-32 mx-auto mt-0 mb-8 p-2 w-32 bg-first;
+    @apply h-32 mx-auto mt-0 mb-8 p-2 w-32 bg-primary;
     border-radius: 50%;
   }
   .card img {
@@ -137,11 +138,8 @@ body {
 }
 
 .accordion:hover {
-  @apply text-first
+  @apply text-primary
 }
-/* .active {
-  background-color: hsl(23, 100%, 75%)
-} */
 
 .accordion__title {
   @apply font-LexendMega;

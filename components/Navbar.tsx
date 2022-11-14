@@ -18,7 +18,7 @@ const Navbar: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className="navbar text-first bg-opacity-0 backdrop-blur-[1px]"
+      className="navbar text-primary bg-opacity-0 backdrop-blur-[1px]"
       ref={reference}
     >
       <div className="navbar-start">
@@ -41,7 +41,7 @@ const Navbar: React.FC<Props> = ({
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
           >
             <li>
               <a
@@ -57,7 +57,7 @@ const Navbar: React.FC<Props> = ({
                 className="font-bold hover:bg-black hover:text-white font-LexendMega"
                 onClick={clickFeatures}
               >
-                How it works?
+                How it works
               </a>
             </li>
 
@@ -71,10 +71,9 @@ const Navbar: React.FC<Props> = ({
             </li>
           </ul>
         </div>
-        {/* <Image src={Logo} alt="App Logo" width={100} height={100} /> */}
         <Link href="#">
           <div className="btn btn-ghost normal-case text-xl font-LexendMega">
-            MEEToo
+            Puzzoh
           </div>
         </Link>
       </div>
@@ -82,24 +81,24 @@ const Navbar: React.FC<Props> = ({
         <ul className="menu menu-horizontal p-0 gap-1">
           <li>
             <a
-              className="btn btn-ghost bg-transparent hover:bg-first hover:text-white font-LexendMega"
+              className="btn btn-ghost bg-transparent hover:bg-primary hover:text-white font-LexendMega"
               onClick={clickHighlights}
             >
-              Why MEEToo
+              Why Us?
             </a>
           </li>
           <li>
             <a
-              className="btn btn-ghost bg-transparent hover:bg-first hover:text-white font-LexendMega"
+              className="btn btn-ghost bg-transparent hover:bg-primary hover:text-white font-LexendMega"
               onClick={clickFeatures}
             >
-              How it works?
+              How it works
             </a>
           </li>
 
           <li>
             <a
-              className="btn btn-ghost bg-transparent hover:bg-first hover:text-white font-LexendMega"
+              className="btn btn-ghost bg-transparent hover:bg-primary hover:text-white font-LexendMega"
               onClick={clickOurTeam}
             >
               Our Team
@@ -109,7 +108,7 @@ const Navbar: React.FC<Props> = ({
       </div>
       <div className="navbar-end">
         <a
-          className="btn font-LexendMega hover:bg-white hover:text-black"
+          className="btn font-LexendMega text-white hover:bg-white hover:text-black"
           onClick={clickContact}
         >
           Contact Us

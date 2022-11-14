@@ -5,12 +5,11 @@ const Logo = require("../public/logo2_transparent.png").default;
 
 const BusinessNavbar: React.FC = () => {
   return (
-    <div className="navbar text-first bg-opacity-0 backdrop-blur-[1px]">
+    <div className="navbar text-primary bg-opacity-0 backdrop-blur-[1px]">
       <div className="navbar-start">
-        {/* <Image src={Logo} alt="App Logo" width={100} height={100} /> */}
         <Link href=".">
           <div className="btn btn-ghost normal-case text-xl font-LexendMega">
-            MEEToo
+            Puzzoh
           </div>
         </Link>
       </div>
@@ -18,17 +17,17 @@ const BusinessNavbar: React.FC = () => {
       <div className="navbar-end">
         <div className="flex space-x-2">
           <Link href="#">
-            <button className="btn rounded-3xl bg-black hover:bg-first border-none">
+            <button className="btn rounded-3xl bg-black hover:bg-primary border-none">
               <IoLogoInstagram className="text-white text-3xl" />
             </button>
           </Link>
           <Link href="#">
-            <button className="btn rounded-3xl bg-black hover:bg-first border-none">
+            <button className="btn rounded-3xl bg-black hover:bg-primary border-none">
               <IoLogoLinkedin className="text-white text-3xl " />
             </button>
           </Link>
-          <Link href="https://github.com/mphung1/MEEToo-App">
-            <button className="btn rounded-3xl bg-black hover:bg-first border-none">
+          <Link href="https://github.com/mphung1/Puzzoh-App">
+            <button className="btn rounded-3xl bg-black hover:bg-primary border-none">
               <IoLogoGithub className="text-white text-3xl" />
             </button>
           </Link>

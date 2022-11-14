@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-1 flex-col items-center lg:items-start">
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6 font-LexendMega font-semibold">
             Stop Swiping <br className="sm:block hidden" />{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-second to-first font-LexendMega">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-second to-primary font-LexendMega">
               Start Meeting
             </span>{" "}
           </h1>
@@ -49,22 +49,20 @@ const Hero: React.FC = () => {
               Get it on Google Play
               <FaGooglePlay className="text-3xl pl-3" />
             </button>
-            <Link href="/Business">
-              <button>
-                <p className="text-base text-center lg:text-left mt-0 lg:mt-10 font-LexendDeca underline hover:text-first">
-                  Own a restaurant/place? Partner with MEEToo.
-                </p>
-              </button>
-            </Link>
+            <p className="text-base text-center lg:text-left mt-0 lg:mt-10 font-LexendDeca">
+              Own a restaurant/place?{" "}
+              <Link href="/business">
+                <button>
+                  <span className="underline font-bold hover:text-primary">
+                    Partner with Puzzoh!
+                  </span>
+                </button>
+              </Link>
+            </p>
           </div>
         </div>
 
         <div className="w-screen flex justify-center flex-1 mb-0">
-          {/* <img
-            className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
-            src="Background3.png"
-            alt=""
-          /> */}
           <ReactPhotoCollage {...setting} />
         </div>
       </div>
@@ -83,7 +81,6 @@ const Hero: React.FC = () => {
           right-0
           lg:-bottom-28
         "
-        //lg:-right-36
       ></div>
     </section>
   );

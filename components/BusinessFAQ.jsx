@@ -1,17 +1,5 @@
 import React, { useState, useRef } from "react";
 
-// interface AccordionProps {
-//   title: string;
-//   content: string | null | any;
-// }
-
-// interface ChevronProps {
-//   className: string;
-//   height?: number;
-//   width: number;
-//   fill: string;
-// }
-
 const Chevron = (props) => {
   return (
     <svg
@@ -66,26 +54,6 @@ const Accordion = (props) => {
   );
 };
 
-// const qa = [
-//   { q: "Is my restaurant eligible?", a: "Lorem ipsum dolor sit amet" },
-//   {
-//     q: "How do I track my customers via the app?",
-//     a: "Lorem ipsum dolor sit amet",
-//   },
-//   {
-//     q: "?",
-//     a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//   },
-//   {
-//     q: "What perks do I gain?",
-//     a: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//   },
-// ];
-
-// interface Props {
-//   reference: React.MutableRefObject<HTMLInputElement>;
-// }
-
 const BusinessFAQ = ({ reference }) => {
   return (
     <div ref={reference}>
@@ -93,14 +61,7 @@ const BusinessFAQ = ({ reference }) => {
         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight font-LexendMega sm:text-4xl">
           Frequently Asked Questions
         </p>
-        {/* <p className="mt-4 max-w-2xl text-xl font-LexendDeca lg:mx-auto">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
-            </p> */}
       </div>
-      {/* {qa.map((q, a) => (
-        <Accordion key={qa.q} title={qa.q} content={qa.a} />
-      ))} */}
       <Accordion
         title="Is my restaurant eligible?"
         content="Lorem ipsum dolor sit amet"

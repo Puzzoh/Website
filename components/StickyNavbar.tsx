@@ -15,7 +15,7 @@ const StickyNavbar: React.FC<Props> = ({
   clickFAQ,
 }) => {
   return (
-    <div className="navbar sticky top-0 z-50 text-first bg-black backdrop-blur-sm backdrop-brightness-100 backdrop-filter-none">
+    <div className="navbar sticky top-0 z-50 text-primary bg-black backdrop-blur-sm backdrop-brightness-100 backdrop-filter-none">
       <div className="navbar-start">
         <div className="dropdown">
           <label
@@ -39,7 +39,7 @@ const StickyNavbar: React.FC<Props> = ({
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
           >
             <li>
               <a
@@ -67,7 +67,6 @@ const StickyNavbar: React.FC<Props> = ({
             </li>
           </ul>
         </div>
-        {/* <Image src={Logo} alt="App Logo" width={100} height={100} /> */}
         <Link href="#">
           <div className="btn btn-ghost normal-case text-xl font-LexendMega underline">
             Vendor
@@ -78,7 +77,7 @@ const StickyNavbar: React.FC<Props> = ({
         <ul className="menu menu-horizontal p-0 gap-1">
           <li>
             <a
-              className="btn btn-ghost bg-transparent hover:bg-first hover:text-white font-LexendMega"
+              className="btn btn-ghost bg-transparent hover:bg-primary hover:text-white font-LexendMega"
               onClick={clickOverview}
             >
               Overview
@@ -86,7 +85,7 @@ const StickyNavbar: React.FC<Props> = ({
           </li>
           <li>
             <a
-              className="btn btn-ghost bg-transparent hover:bg-first hover:text-white font-LexendMega"
+              className="btn btn-ghost bg-transparent hover:bg-primary hover:text-white font-LexendMega"
               onClick={clickPerks}
             >
               Perks
@@ -94,7 +93,7 @@ const StickyNavbar: React.FC<Props> = ({
           </li>
           <li>
             <a
-              className="btn btn-ghost bg-transparent hover:bg-first hover:text-white font-LexendMega"
+              className="btn btn-ghost bg-transparent hover:bg-primary hover:text-white font-LexendMega"
               onClick={clickFAQ}
             >
               FAQ
@@ -102,9 +101,13 @@ const StickyNavbar: React.FC<Props> = ({
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn font-LexendMega bg-black"></a>
-      </div>
+      <Link href="#">
+        <div className="navbar-end">
+          <div className="btn font-LexendMega text-white hover:bg-white hover:text-black">
+            Sign In
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };

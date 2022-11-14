@@ -18,7 +18,7 @@ const Timeline: React.FC = () => {
             </h1>
             <p className="pt-1 font-LexendDeca">
               Build this website as the primary channel to introduce users and
-              businesses to the perks of joining MEEToo community.
+              businesses to the perks of joining Puzzoh community.
             </p>
           </div>
         </div>

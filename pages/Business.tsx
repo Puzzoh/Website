@@ -33,7 +33,6 @@ const Business: NextPage = () => {
       />
       <BusinessPerks reference={elPerks} />
       <BusinessFAQ reference={elFAQ} />
-      {/* <Footer /> */}
     </div>
   );
 };
