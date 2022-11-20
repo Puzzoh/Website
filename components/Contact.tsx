@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
                 <IoLogoLinkedin className="text-primary text-2xl" />
               </button>
             </Link>
-            <Link href="https://github.com/mphung1/Puzzoh-App">
+            <Link href="https://github.com/Puzzoh">
               <button>
                 <IoLogoGithub className="text-primary text-2xl" />
               </button>

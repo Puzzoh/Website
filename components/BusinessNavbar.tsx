@@ -26,7 +26,7 @@ const BusinessNavbar: React.FC = () => {
               <IoLogoLinkedin className="text-white text-3xl " />
             </button>
           </Link>
-          <Link href="https://github.com/mphung1/Puzzoh-App">
+          <Link href="https://github.com/Puzzoh">
             <button className="btn rounded-3xl bg-black hover:bg-primary border-none">
               <IoLogoGithub className="text-white text-3xl" />
             </button>

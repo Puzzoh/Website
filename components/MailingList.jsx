@@ -93,7 +93,7 @@ const MailingList = () => {
                 <IoLogoLinkedin className="text-black hover:text-white text-3xl " />
               </button>
             </Link>
-            <Link href="https://github.com/mphung1/Puzzoh-App">
+            <Link href="https://github.com/Puzzoh">
               <button className="btn rounded-3xl bg-white hover:bg-primary border-none">
                 <IoLogoGithub className="text-black hover:text-white text-3xl" />
               </button>
