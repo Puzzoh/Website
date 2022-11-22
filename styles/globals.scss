@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+$primary: hsl(23, 100%, 65%);
+$second: hsl(72, 68%, 64%);
+
+@font-face {
+    font-family: "LexendMega";
+    src: url('../public/fonts/LexendMega.ttf')
+}
+
+@font-face {
+    font-family: "LexendDeca";
+    src: url('../public/fonts/LexendDeca.ttf')
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,22 +24,7 @@
 body {
   background: white;
   color: black;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Arial, Helvetica, sans-serif;
-}
-
-@font-face {
-    font-family: "IndustrialSans";
-    src: url("../public/IndustrialSans-Light.otf");
-}
-
-@font-face {
-    font-family: "LexendMega";
-    src: url('../public/LexendMega.ttf')
-}
-
-@font-face {
-    font-family: "LexendDeca";
-    src: url('../public/LexendDeca.ttf')
+  font-family: "LexendDeca", sans-serif;
 }
 
 @layer components {
@@ -94,7 +92,7 @@ body {
   }
   .card:hover {
     background: linear-gradient(#000, hsl(23, 100%, 65%));
-    color: #ffffff;
+    color: white;
   }
   .card:hover .img-container {
     transform: scale(1.15);
@@ -117,8 +115,6 @@ body {
       padding: 0 1em;
     }
   }
-
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
 
 .accordion__section {
   display: flex;
@@ -164,7 +160,6 @@ body {
 }
 
 .accordion__text {
-  @apply font-LexendDeca;
   font-weight: 400;
   font-size: 14px;
   padding: 18px;

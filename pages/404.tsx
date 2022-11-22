@@ -9,9 +9,7 @@ const NotFound: NextPage = () => {
       <h1 className="text-6xl text-primary font-bold font-LexendMega">
         404 - Page not found
       </h1>
-      <p className="font-LexendDeca">
-        The URL of this page is not found. Please try again.
-      </p>
+      <p className="">The URL of this page is not found. Please try again.</p>
       <div>
         <Link href=".">
           <div className="btn mr-4 bg-black text-white">Go to homepage</div>

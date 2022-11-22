@@ -8,13 +8,13 @@ const setting = {
   height: ["250px", "170px"],
   layout: [3, 4],
   photos: [
-    { source: "Collage1.jpeg" },
-    { source: "Collage2.jpeg" },
-    { source: "Collage3.jpeg" },
-    { source: "Collage8.jpeg" },
-    { source: "Collage5.jpeg" },
-    { source: "Collage6.jpeg" },
-    { source: "Collage7.jpeg" },
+    { source: "images/Collage1.jpeg" },
+    { source: "images/Collage2.jpeg" },
+    { source: "images/Collage3.jpeg" },
+    { source: "images/Collage8.jpeg" },
+    { source: "images/Collage5.jpeg" },
+    { source: "images/Collage6.jpeg" },
+    { source: "images/Collage7.jpeg" },
   ],
   showNumOfRemainingPhotos: false,
 };
@@ -30,11 +30,11 @@ const Hero: React.FC = () => {
               Start Meeting
             </span>{" "}
           </h1>
-          <p className="text-lg text-center lg:text-left mb-6 font-LexendDeca">
+          <p className="text-lg text-center lg:text-left mb-6">
             Choose a voucher for food or an activity & share the experience in
             real life with your match(es).
           </p>
-          <div className="flex justify-center flex-wrap gap-6 font-LexendDeca">
+          <div className="flex justify-center flex-wrap gap-6 ">
             <button
               type="button"
               className="btn bg-white text-black hover:bg-black hover:text-white"
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               Get it on Google Play
               <FaGooglePlay className="text-3xl pl-3" />
             </button>
-            <p className="text-base text-center lg:text-left mt-0 lg:mt-10 font-LexendDeca">
+            <p className="text-base text-center lg:text-left mt-0 lg:mt-10">
               Own a restaurant/place?{" "}
               <Link href="/business">
                 <button>

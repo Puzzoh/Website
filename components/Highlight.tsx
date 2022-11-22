@@ -24,7 +24,7 @@ export const HighlightLeft: React.FC<{
 
   return (
     <div
-      className="flex flex-col items-center text-3xl lg:text-3xl h-[30vh] lg:h-auto bg-primary_light"
+      className="flex flex-col items-center text-3xl lg:text-3xl h-[30vh] lg:h-auto bg-primary"
       style={{
         transform: `translateY(${translateY}px)`,
       }}

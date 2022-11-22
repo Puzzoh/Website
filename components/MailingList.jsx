@@ -3,7 +3,7 @@ import { ChangeEvent, useState, useRef, useEffect } from "react";
 import { IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-const MailingList = () => {
+const MailingList = ({ innerRef }) => {
   const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
 
   const CustomForm = ({ status, message, onValidated }) => {
@@ -25,17 +25,17 @@ const MailingList = () => {
     }, [status]);
 
     return (
-      <div>
+      <div ref={innerRef}>
         <div className="flex md:flex-row gap-2 md:justify-center w-full">
           <input
             ref={(node) => (email = node)}
             type="email"
             placeholder="Your email"
-            className="input input-bordered bg-white text-black w-full max-w-xs font-LexendDeca"
+            className="input input-bordered bg-white text-black w-full max-w-xs "
           />
           <button
             onClick={onSubmit}
-            className="btn btn-md text-white font-LexendDeca w-30"
+            className="btn btn-md text-white  w-30"
           >
             Subscribe
           </button>
@@ -44,7 +44,7 @@ const MailingList = () => {
           <div className="toast toast-end z-50">
             <div className="alert alert-success bg-black">
               <div>
-                <span className="text-white font-LexendDeca">Sending...</span>
+                <span className="text-white ">Sending...</span>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ const MailingList = () => {
           <div className="toast toast-end z-50">
             <div className="alert alert-success bg-black">
               <div>
-                <span className="text-white font-LexendDeca">{message}</span>
+                <span className="text-white ">{message}</span>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const MailingList = () => {
           <div className="toast toast-end z-50">
             <div className="alert alert-success bg-black">
               <div>
-                <span className="text-white font-LexendDeca">{message}</span>
+                <span className="text-white ">{message}</span>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ const MailingList = () => {
             </Link>
           </div>
 
-          <div className="font-LexendDeca text-base lg:w-full my-5 tracking-wide">
+          <div className=" text-base lg:w-full my-5 tracking-wide">
             Join the emailing list today to receive the latest updates about our
             upcoming app!
           </div>

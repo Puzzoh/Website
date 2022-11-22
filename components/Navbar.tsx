@@ -1,16 +1,15 @@
 import React, { MouseEventHandler, MutableRefObject } from "react";
 import Link from "next/link";
-const Logo = require("../public/logo2_transparent.png").default;
 
 interface Props {
-  reference?: MutableRefObject<HTMLInputElement>;
+  innerRef?: MutableRefObject<HTMLInputElement>;
   clickHighlights: MouseEventHandler<HTMLAnchorElement>;
   clickFeatures: MouseEventHandler<HTMLAnchorElement>;
   clickOurTeam: MouseEventHandler<HTMLAnchorElement>;
   clickContact: MouseEventHandler<HTMLAnchorElement>;
 }
 const Navbar: React.FC<Props> = ({
-  reference,
+  innerRef,
   clickHighlights,
   clickFeatures,
   clickOurTeam,
@@ -19,7 +18,7 @@ const Navbar: React.FC<Props> = ({
   return (
     <div
       className="navbar text-primary bg-opacity-0 backdrop-blur-[1px]"
-      ref={reference}
+      ref={innerRef}
     >
       <div className="navbar-start">
         <div className="dropdown">

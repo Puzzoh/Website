@@ -1,11 +1,20 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaGithub,
+  FaEnvelope,
+  FaInstagram,
+} from "react-icons/fa";
 
-const OurTeam: React.FC = () => {
+interface Props {
+  innerRef: React.MutableRefObject<HTMLInputElement>;
+}
+
+const OurTeam: React.FC<Props> = ({ innerRef }) => {
   return (
-    <div>
+    <div ref={innerRef}>
       <div className="py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
@@ -19,19 +28,28 @@ const OurTeam: React.FC = () => {
         <div className="column">
           <div className="card">
             <div className="img-container">
-              <img src="Holly.jpg" alt="Headshot" />
+              <img src="images/Holly.jpg" alt="Headshot" />
             </div>
             <h3 className="font-LexendMega">Holly Ouyang</h3>
-            <p className="font-LexendDeca">Product Manager</p>
+            <p>Product Manager</p>
             <div className="icons">
-              <Link href="#">
-                <FaLinkedinIn />
+              <Link
+                href="https://www.linkedin.com/in/huige-holly-ouyang"
+                passHref
+              >
+                <a>
+                  <FaLinkedinIn />
+                </a>
               </Link>
-              <Link href="#">
-                <FaGithub />
+              <Link href="#" passHref>
+                <a>
+                  <FaInstagram />
+                </a>
               </Link>
-              <Link href="#">
-                <FaEnvelope />
+              <Link href="mailto:houyang@villanova.edu" passHref>
+                <a>
+                  <FaEnvelope />
+                </a>
               </Link>
             </div>
           </div>
@@ -39,19 +57,25 @@ const OurTeam: React.FC = () => {
         <div className="column">
           <div className="card">
             <div className="img-container">
-              <img src="Minh.jpg" alt="Headshot" />
+              <img src="images/Minh.jpg" alt="Headshot" />
             </div>
             <h3 className="font-LexendMega">Minh Phung</h3>
-            <p className="font-LexendDeca">Developer</p>
+            <p>Developer</p>
             <div className="icons">
-              <Link href="https://www.linkedin.com/in/minhphung1">
-                <FaLinkedinIn />
+              <Link href="https://www.linkedin.com/in/minhphung1" passHref>
+                <a>
+                  <FaLinkedinIn />
+                </a>
               </Link>
-              <Link href="https://github.com/mphung1">
-                <FaGithub />
+              <Link href="https://github.com/mphung1" passHref>
+                <a>
+                  <FaGithub />
+                </a>
               </Link>
-              <Link href="#">
-                <FaEnvelope />
+              <Link href="mailto:mphung1@villanova.edu" passHref>
+                <a>
+                  <FaEnvelope />
+                </a>
               </Link>
             </div>
           </div>

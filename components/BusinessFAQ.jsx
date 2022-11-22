@@ -74,10 +74,6 @@ const BusinessFAQ = ({ reference }) => {
         title="How do I track my customers via the app?"
         content="Lorem ipsum dolor sit amet"
       />
-      <Accordion
-        title="What kind of MEE&apos;Tools&apos; do partners receive?"
-        content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
     </div>
   );
 };

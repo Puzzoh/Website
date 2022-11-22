@@ -41,20 +41,18 @@ const Contact: React.FC = () => {
             <h1 className="text-4xl font-bold font-LexendMega tracking-wide">
               Contact Us
             </h1>
-            <p className="pt-2 text-black font-LexendDeca text-sm">
+            <p className="pt-2 text-black  text-sm">
               Please leave us a comment, question or suggestion.
             </p>
           </div>
           <div className="flex flex-col space-y-6">
             <div className="inline-flex space-x-2 items-center">
               <IoMail className="text-primary text-xl" />
-              <span className=" font-LexendDeca select-all">
-                puzzoh@gmail.com
-              </span>
+              <span className="  select-all">puzzoh@gmail.com</span>
             </div>
             <div className="inline-flex space-x-2 items-center">
               <IoLocation className="text-primary text-xl" />
-              <span className=" font-LexendDeca select-all">
+              <span className="  select-all">
                 800 E Lancaster Ave, Villanova, PA 19085, US
               </span>
             </div>
@@ -92,7 +90,7 @@ const Contact: React.FC = () => {
                 maxLength={128}
                 type="text"
                 placeholder="Name"
-                className="bg-white outline-none border-2 border-none rounded-3xl px-6 py-2 font-LexendDeca"
+                className="bg-white outline-none border-2 border-none rounded-3xl px-6 py-2 "
               />
               <input
                 id="email"
@@ -101,18 +99,18 @@ const Contact: React.FC = () => {
                 maxLength={128}
                 type="email"
                 placeholder="Email"
-                className="bg-white outline-none border-2 border-none rounded-3xl px-6 py-2 font-LexendDeca"
+                className="bg-white outline-none border-2 border-none rounded-3xl px-6 py-2 "
               />
               <textarea
                 id="message"
                 name="message"
                 placeholder="Your message"
-                className="bg-white outline-none border-2 border-none rounded-3xl px-6 py-6 min-h-[15em] font-LexendDeca"
+                className="bg-white outline-none border-2 border-none rounded-3xl px-6 py-6 min-h-[15em] "
               ></textarea>
               <div className="inline-block self-end font-bold mt-10">
                 <button
                   type="submit"
-                  className="btn btn-sm bg-black text-white hover:bg-white hover:text-black rounded-3xl px-8 uppecase text-sm font-LexendDeca"
+                  className="btn btn-sm bg-black text-white hover:bg-white hover:text-black rounded-3xl px-8 uppecase text-sm "
                 >
                   Send message
                 </button>
@@ -122,7 +120,7 @@ const Contact: React.FC = () => {
                 <div className="toast toast-end">
                   <div className="alert alert-success bg-black">
                     <div>
-                      <span className="text-white font-LexendDeca">
+                      <span className="text-white ">
                         Message sent successfully.
                       </span>
                     </div>

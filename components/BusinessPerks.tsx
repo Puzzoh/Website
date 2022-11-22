@@ -26,7 +26,7 @@ const BusinessWhy: React.FC<Props> = ({ reference }) => {
                   {" "}
                   Connect with the right customers
                 </h3>
-                <p className="mt-2 ml-16 font-LexendDeca">
+                <p className="mt-2 ml-16 ">
                   {" "}
                   We connect you directly to our &apos;Meet-ers&apos; who are
                   constantly looking for fun activities and delicious food.
@@ -41,7 +41,7 @@ const BusinessWhy: React.FC<Props> = ({ reference }) => {
                   {" "}
                   Boost your brand
                 </h3>
-                <p className="mt-2 ml-16 font-LexendDeca">
+                <p className="mt-2 ml-16 ">
                   Your vouchers are constantly exposed to our Meet-er&apos;s
                   that helps your business to build brand recognition.
                 </p>
@@ -55,7 +55,7 @@ const BusinessWhy: React.FC<Props> = ({ reference }) => {
                   {" "}
                   Expand your sales
                 </h3>
-                <p className="mt-2 ml-16 font-LexendDeca">
+                <p className="mt-2 ml-16 ">
                   Maximize your revenue and visibility by selling your service
                   in advance.
                 </p>
@@ -69,7 +69,7 @@ const BusinessWhy: React.FC<Props> = ({ reference }) => {
                   {" "}
                   Reducing marketing cost
                 </h3>
-                <p className="mt-2 ml-16 font-LexendDeca">
+                <p className="mt-2 ml-16 ">
                   We provide marketing rates that are significantly lower than
                   other compatible platforms.
                 </p>

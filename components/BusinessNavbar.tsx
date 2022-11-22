@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
-const Logo = require("../public/logo2_transparent.png").default;
 
 const BusinessNavbar: React.FC = () => {
   return (

@@ -5,7 +5,6 @@ import StickyNavbar from "../components/StickyNavbar";
 import BusinessOverview from "../components/BusinessOverview";
 import BusinessPerks from "../components/BusinessPerks";
 import BusinessFAQ from "../components/BusinessFAQ";
-import Footer from "../components/Footer";
 
 const Business: NextPage = () => {
   const smoothScrollToDiv = (ref: MutableRefObject<HTMLInputElement>) =>

@@ -8,9 +8,6 @@ module.exports = {
     ],
     plugins: [require('daisyui')],
     theme: {
-        // letterSpacing: {
-        //     tight: '-.015em'
-        // },
         extend: {
             height: {
                 'half-screen': '50vh'
@@ -20,15 +17,11 @@ module.exports = {
                 '26': '104px'
             },
             fontFamily: {
-                IndustrialSans: ["IndustrialSans", "cursive"],
                 LexendMega: ['LexendMega'],
                 LexendDeca: ['LexendDeca']
             },
             colors: {
-                white: '#FFF',
-                black: '#000',
                 primary: 'hsl(23, 100%, 65%)',
-                primary_light: 'hsl(23, 100%, 70%)',
                 second: 'hsl(72, 68%, 64%)',
             },
         },
@@ -51,7 +44,6 @@ module.exports = {
             'lg': '1024px',     
             'xl': '1280px',      
             '2xl': '1536px',
-            // => @media (min-width: ) { ... }
           }
     },
     variants: {},
