@@ -9,6 +9,7 @@ import OurTeam from "../components/OurTeam";
 import Timeline from "../components/Timeline";
 import Contact from "../components/Contact";
 import MailingList from "../components/MailingList";
+import ChatSupport from "../components/ChatSupport";
 
 const Home: NextPage = () => {
   const smoothScrollToDiv = (ref: MutableRefObject<HTMLInputElement>) =>
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
       <Timeline />
       <MailingList innerRef={elContact} />
       <Contact />
+      <ChatSupport />
     </div>
   );
 };

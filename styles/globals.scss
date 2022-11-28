@@ -70,7 +70,7 @@ body {
     transition: 0.3s;
   }
   .card .img-container {
-    @apply h-32 mx-auto mt-0 mb-8 p-2 w-32 bg-primary;
+    @apply h-32 mx-auto mt-0 mb-8 p-2 w-32;
     border-radius: 50%;
   }
   .card img {

@@ -71,7 +71,7 @@ const BusinessFAQ = ({ reference }) => {
         content="Lorem ipsum dolor sit amet"
       />
       <Accordion
-        title="How do I track my customers via the app?"
+        title="How do I track my customers via the web portal?"
         content="Lorem ipsum dolor sit amet"
       />
     </div>
