@@ -50,7 +50,6 @@ const Navbar: React.FC<Props> = ({
                 Why us?
               </a>
             </li>
-
             <li>
               <a
                 className="font-bold hover:bg-black hover:text-white font-LexendMega"
@@ -59,13 +58,20 @@ const Navbar: React.FC<Props> = ({
                 How it works
               </a>
             </li>
-
             <li>
               <a
                 className="font-bold hover:bg-black hover:text-white font-LexendMega"
                 onClick={clickOurTeam}
               >
                 Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                className="font-bold hover:bg-black hover:text-white font-LexendMega"
+                onClick={clickContact}
+              >
+                Contact Us
               </a>
             </li>
           </ul>
@@ -94,7 +100,6 @@ const Navbar: React.FC<Props> = ({
               How it works
             </a>
           </li>
-
           <li>
             <a
               className="btn btn-ghost bg-transparent hover:bg-primary hover:text-white font-LexendMega"
@@ -103,15 +108,24 @@ const Navbar: React.FC<Props> = ({
               Our Team
             </a>
           </li>
+          <li>
+            <a
+              className="btn btn-ghost bg-transparent hover:bg-primary hover:text-white font-LexendMega"
+              onClick={clickContact}
+            >
+              Contact Us
+            </a>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a
-          className="btn font-LexendMega text-white hover:bg-white hover:text-black"
-          onClick={clickContact}
-        >
-          Contact Us
-        </a>
+        <Link href="/business">
+          <div
+            className="btn font-LexendMega text-white hover:bg-white hover:text-black"
+          >
+            Business portal
+          </div>
+        </Link>
       </div>
     </div>
   );

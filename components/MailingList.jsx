@@ -83,19 +83,15 @@ const MailingList = ({ innerRef }) => {
           </span>
 
           <div className="flex my-2 md:space-x-2 lg:justify-center w-full">
-            <Link href="#">
-              <button className="btn rounded-3xl bg-white hover:bg-primary border-none">
-                <IoLogoInstagram className="text-black hover:text-white text-3xl" />
+              <button className="btn rounded-3xl bg-white hover:bg-white border-none">
+                <IoLogoInstagram className="text-black hover:text-primary text-3xl" />
               </button>
-            </Link>
-            <Link href="#">
-              <button className="btn rounded-3xl bg-white hover:bg-primary border-none">
-                <IoLogoLinkedin className="text-black hover:text-white text-3xl " />
+              <button className="btn rounded-3xl bg-white hover:bg-white border-none">
+                <IoLogoLinkedin className="text-black hover:text-primary text-3xl " />
               </button>
-            </Link>
             <Link href="https://github.com/Puzzoh">
-              <button className="btn rounded-3xl bg-white hover:bg-primary border-none">
-                <IoLogoGithub className="text-black hover:text-white text-3xl" />
+              <button className="btn rounded-3xl bg-white hover:bg-white border-none">
+                <IoLogoGithub className="text-black hover:text-primary text-3xl" />
               </button>
             </Link>
           </div>

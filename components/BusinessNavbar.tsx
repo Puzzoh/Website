@@ -16,18 +16,18 @@ const BusinessNavbar: React.FC = () => {
       <div className="navbar-end">
         <div className="flex space-x-2">
           <Link href="#">
-            <button className="btn rounded-3xl bg-black hover:bg-primary border-none">
-              <IoLogoInstagram className="text-white text-3xl" />
+            <button className="btn rounded-full bg-white hover:bg-white border-none">
+              <IoLogoInstagram className="text-black text-3xl hover:text-primary" />
             </button>
           </Link>
           <Link href="#">
-            <button className="btn rounded-3xl bg-black hover:bg-primary border-none">
-              <IoLogoLinkedin className="text-white text-3xl " />
+            <button className="btn rounded-3xl bg-white hover:bg-white border-none">
+              <IoLogoLinkedin className="text-black text-3xl hover:text-primary" />
             </button>
           </Link>
           <Link href="https://github.com/Puzzoh">
-            <button className="btn rounded-3xl bg-black hover:bg-primary border-none">
-              <IoLogoGithub className="text-white text-3xl" />
+            <button className="btn rounded-3xl bg-white hover:bg-white border-none">
+              <IoLogoGithub className="text-black text-3xl hover:text-primary" />
             </button>
           </Link>
         </div>

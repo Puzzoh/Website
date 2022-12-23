@@ -41,11 +41,9 @@ const OurTeam: React.FC<Props> = ({ innerRef }) => {
                   <FaLinkedinIn />
                 </a>
               </Link>
-              <Link href="#" passHref>
                 <a>
                   <FaInstagram />
                 </a>
-              </Link>
               <Link href="mailto:houyang@villanova.edu" passHref>
                 <a>
                   <FaEnvelope />

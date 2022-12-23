@@ -58,17 +58,12 @@ const Contact: React.FC = () => {
             </div>
           </div>
           <div className="flex space-x-4 text-lg">
-            <Link href="#">
               <button>
                 <IoLogoInstagram className="text-primary text-2xl" />
               </button>
-            </Link>
-
-            <Link href="#">
               <button>
                 <IoLogoLinkedin className="text-primary text-2xl" />
               </button>
-            </Link>
             <Link href="https://github.com/Puzzoh">
               <button>
                 <IoLogoGithub className="text-primary text-2xl" />

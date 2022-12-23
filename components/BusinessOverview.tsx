@@ -16,13 +16,13 @@ const BusinessOverview: React.FC<Props> = ({ reference }) => {
         <div className="grid lg:grid-cols-2 items-center justify-items-center gap-5">
           <div className="order-2 lg:order-1 flex flex-col justify-center items-center">
             <div className="w-full text-center text-2xl font-bold md:text-4xl text-white font-LexendMega">
-              Make our customers&apos; new favorite services
+              Make our users&apos; new favorite services
             </div>
             <div className="text-center font-light mt-2 text-sm md:text-lg text-gray-300">
               An efficient and cost-friendly way to reach new customers and
               manage reservation
             </div>
-            <Link href="#">
+            <Link href="https://puzzoh-business.herokuapp.com">
               <button className="btn btn-md border-none bg-white hover:bg-black text-black hover:text-white rounded-3xl uppecase text-sm px-5 mt-10 mb-4 lg:mb-0">
                 Sign in to the business portal
               </button>
@@ -126,13 +126,13 @@ const BusinessOverview: React.FC<Props> = ({ reference }) => {
                 />
                 <div className="text-gray-400 text-sm ">
                   By clicking &apos;Submit&apos; you agree to our {""}
-                  <Link href="Policy">
+                  <Link href="/business/policy">
                     <span className="underline hover:text-white">
                       General Terms and Conditions
                     </span>
                   </Link>
                   {""} and acknowledge you have read the {""}
-                  <Link href="Policy">
+                  <Link href="/business/policy">
                     <span className="underline hover:text-white">
                       Privacy Policy.
                     </span>
