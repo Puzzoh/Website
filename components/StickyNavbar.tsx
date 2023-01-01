@@ -101,7 +101,7 @@ const StickyNavbar: React.FC<Props> = ({
           </li>
         </ul>
       </div>
-      <Link href="https://puzzoh-business.herokuapp.com">
+      <Link href="/">
         <div className="navbar-end">
           <div className="btn font-LexendMega text-white hover:bg-white hover:text-black">
             Sign In

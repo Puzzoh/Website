@@ -22,7 +22,7 @@ const BusinessOverview: React.FC<Props> = ({ reference }) => {
               An efficient and cost-friendly way to reach new customers and
               manage reservation
             </div>
-            <Link href="https://puzzoh-business.herokuapp.com">
+            <Link href="/">
               <button className="btn btn-md border-none bg-white hover:bg-black text-black hover:text-white rounded-3xl uppecase text-sm px-5 mt-10 mb-4 lg:mb-0">
                 Sign in to the business portal
               </button>
